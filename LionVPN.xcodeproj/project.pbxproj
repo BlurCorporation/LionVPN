@@ -8,17 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		8D9092092A6ADBB30017B5F1 /* LionVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9092082A6ADBB30017B5F1 /* LionVPNApp.swift */; };
-		8D90920B2A6ADBB30017B5F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90920A2A6ADBB30017B5F1 /* ContentView.swift */; };
 		8D90920D2A6ADBB40017B5F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D90920C2A6ADBB40017B5F1 /* Assets.xcassets */; };
-		8D9092102A6ADBB40017B5F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D90920F2A6ADBB40017B5F1 /* Preview Assets.xcassets */; };
+		8D90921A2A6AEC080017B5F1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9092192A6AEC080017B5F1 /* AppCoordinator.swift */; };
+		8D90921C2A6AEC280017B5F1 /* AppCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90921B2A6AEC280017B5F1 /* AppCoordinatorView.swift */; };
+		8D90923B2A6AF8DC0017B5F1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90923A2A6AF8DC0017B5F1 /* OnboardingView.swift */; };
+		8D9092412A6AF9700017B5F1 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9092402A6AF9700017B5F1 /* OnboardingViewModel.swift */; };
+		8D9092432A6AFD100017B5F1 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9092422A6AFD100017B5F1 /* OnboardingCoordinator.swift */; };
+		8D9092452A6AFD3A0017B5F1 /* OnboardingCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9092442A6AFD3A0017B5F1 /* OnboardingCoordinatorView.swift */; };
+		8D9D16352A6B02300075E8D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D9D16342A6B02300075E8D6 /* Preview Assets.xcassets */; };
+		8D9D16392A6B83090075E8D6 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16382A6B83090075E8D6 /* AppDIContainer.swift */; };
+		8D9D163B2A6B83580075E8D6 /* OnboardingDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D163A2A6B83580075E8D6 /* OnboardingDIContainer.swift */; };
+		8D9D163E2A6B85D70075E8D6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D163D2A6B85D70075E8D6 /* Coordinator.swift */; };
+		8D9D16412A6B89160075E8D6 /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16402A6B89160075E8D6 /* OnboardingManager.swift */; };
+		8D9D16442A6B8A120075E8D6 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16432A6B8A120075E8D6 /* CoordinatorFactory.swift */; };
+		8D9D16462A6B8FFC0075E8D6 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16452A6B8FFC0075E8D6 /* AuthManager.swift */; };
+		8D9D16482A6B903F0075E8D6 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16472A6B903F0075E8D6 /* ProfileManager.swift */; };
+		8D9D164A2A6B91E10075E8D6 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16492A6B91E10075E8D6 /* SubscriptionManager.swift */; };
+		8D9D164C2A6B99EA0075E8D6 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D164B2A6B99EA0075E8D6 /* Repository.swift */; };
+		8D9D164F2A6C7E680075E8D6 /* ManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D164E2A6C7E680075E8D6 /* ManagerFactory.swift */; };
+		8D9D16512A6D55C90075E8D6 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16502A6D55C90075E8D6 /* SceneFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D9092052A6ADBB30017B5F1 /* LionVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LionVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9092082A6ADBB30017B5F1 /* LionVPNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionVPNApp.swift; sourceTree = "<group>"; };
-		8D90920A2A6ADBB30017B5F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8D90920C2A6ADBB40017B5F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8D90920F2A6ADBB40017B5F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D9092192A6AEC080017B5F1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8D90921B2A6AEC280017B5F1 /* AppCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorView.swift; sourceTree = "<group>"; };
+		8D90923A2A6AF8DC0017B5F1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8D9092402A6AF9700017B5F1 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		8D9092422A6AFD100017B5F1 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		8D9092442A6AFD3A0017B5F1 /* OnboardingCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinatorView.swift; sourceTree = "<group>"; };
+		8D9D16342A6B02300075E8D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D9D16382A6B83090075E8D6 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		8D9D163A2A6B83580075E8D6 /* OnboardingDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDIContainer.swift; sourceTree = "<group>"; };
+		8D9D163D2A6B85D70075E8D6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8D9D16402A6B89160075E8D6 /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
+		8D9D16432A6B8A120075E8D6 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		8D9D16452A6B8FFC0075E8D6 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		8D9D16472A6B903F0075E8D6 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		8D9D16492A6B91E10075E8D6 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		8D9D164B2A6B99EA0075E8D6 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		8D9D164E2A6C7E680075E8D6 /* ManagerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerFactory.swift; sourceTree = "<group>"; };
+		8D9D16502A6D55C90075E8D6 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,20 +83,292 @@
 		8D9092072A6ADBB30017B5F1 /* LionVPN */ = {
 			isa = PBXGroup;
 			children = (
-				8D9092082A6ADBB30017B5F1 /* LionVPNApp.swift */,
-				8D90920A2A6ADBB30017B5F1 /* ContentView.swift */,
-				8D90920C2A6ADBB40017B5F1 /* Assets.xcassets */,
-				8D90920E2A6ADBB40017B5F1 /* Preview Content */,
+				8D9092162A6AEBDE0017B5F1 /* Application */,
+				8D90921F2A6AF03C0017B5F1 /* Core */,
+				8D90921E2A6AEF8A0017B5F1 /* Flows */,
 			);
 			path = LionVPN;
 			sourceTree = "<group>";
 		};
-		8D90920E2A6ADBB40017B5F1 /* Preview Content */ = {
+		8D9092162A6AEBDE0017B5F1 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				8D90920F2A6ADBB40017B5F1 /* Preview Assets.xcassets */,
+				8D9092082A6ADBB30017B5F1 /* LionVPNApp.swift */,
+				8D90921B2A6AEC280017B5F1 /* AppCoordinatorView.swift */,
+				8D9092192A6AEC080017B5F1 /* AppCoordinator.swift */,
+				8D9D16382A6B83090075E8D6 /* AppDIContainer.swift */,
+				8D90921D2A6AEF090017B5F1 /* Resoorces */,
+				8D9D16332A6B01FA0075E8D6 /* Preview Content1 */,
 			);
-			path = "Preview Content";
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8D90921D2A6AEF090017B5F1 /* Resoorces */ = {
+			isa = PBXGroup;
+			children = (
+				8D90920C2A6ADBB40017B5F1 /* Assets.xcassets */,
+			);
+			path = Resoorces;
+			sourceTree = "<group>";
+		};
+		8D90921E2A6AEF8A0017B5F1 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				8D9092202A6AF1540017B5F1 /* Onboarding */,
+				8D9092212A6AF17F0017B5F1 /* Auth */,
+				8D9092222A6AF1A60017B5F1 /* Main */,
+				8D9092232A6AF1C70017B5F1 /* Profile */,
+				8D9092252A6AF2590017B5F1 /* Subscription */,
+				8D9092242A6AF1EA0017B5F1 /* Password */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		8D90921F2A6AF03C0017B5F1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8D9D164D2A6C7E550075E8D6 /* Factory */,
+				8D9D163F2A6B883A0075E8D6 /* Repository */,
+				8D9D163C2A6B85BC0075E8D6 /* Coordinator */,
+				8D9092262A6AF3480017B5F1 /* SubViews */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8D9092202A6AF1540017B5F1 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8D9092282A6AF3BA0017B5F1 /* PresentationLayer */,
+				8D9092292A6AF3E10017B5F1 /* DomainLayer */,
+				8D90922A2A6AF3EC0017B5F1 /* DataLayer */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8D9092212A6AF17F0017B5F1 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8D90922B2A6AF4140017B5F1 /* PresentationLayer */,
+				8D90922C2A6AF47F0017B5F1 /* DomainLayer */,
+				8D90922D2A6AF48A0017B5F1 /* DataLayer */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		8D9092222A6AF1A60017B5F1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8D90922E2A6AF4BB0017B5F1 /* PresentationLayer */,
+				8D90922F2A6AF4DE0017B5F1 /* DomainLayer */,
+				8D9092302A6AF4F00017B5F1 /* DataLayer */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8D9092232A6AF1C70017B5F1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8D9092312A6AF5100017B5F1 /* PresentationLayer */,
+				8D9092322A6AF5240017B5F1 /* DomainLayer */,
+				8D9092332A6AF5320017B5F1 /* DataLayer */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8D9092242A6AF1EA0017B5F1 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				8D9092372A6AF59A0017B5F1 /* PresentationLayer */,
+				8D9092382A6AF5A80017B5F1 /* DomainLayer */,
+				8D9092392A6AF5BB0017B5F1 /* DataLayer */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		8D9092252A6AF2590017B5F1 /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				8D9092342A6AF55E0017B5F1 /* PresentationLayer */,
+				8D9092352A6AF5720017B5F1 /* DomainLayer */,
+				8D9092362A6AF5800017B5F1 /* DataLayer */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+		8D9092262A6AF3480017B5F1 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		8D9092282A6AF3BA0017B5F1 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8D90923A2A6AF8DC0017B5F1 /* OnboardingView.swift */,
+				8D9092402A6AF9700017B5F1 /* OnboardingViewModel.swift */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		8D9092292A6AF3E10017B5F1 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8D9092442A6AFD3A0017B5F1 /* OnboardingCoordinatorView.swift */,
+				8D9092422A6AFD100017B5F1 /* OnboardingCoordinator.swift */,
+				8D9D163A2A6B83580075E8D6 /* OnboardingDIContainer.swift */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		8D90922A2A6AF3EC0017B5F1 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8D9D16402A6B89160075E8D6 /* OnboardingManager.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		8D90922B2A6AF4140017B5F1 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		8D90922C2A6AF47F0017B5F1 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		8D90922D2A6AF48A0017B5F1 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8D9D16452A6B8FFC0075E8D6 /* AuthManager.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		8D90922E2A6AF4BB0017B5F1 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		8D90922F2A6AF4DE0017B5F1 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		8D9092302A6AF4F00017B5F1 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		8D9092312A6AF5100017B5F1 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		8D9092322A6AF5240017B5F1 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		8D9092332A6AF5320017B5F1 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8D9D16472A6B903F0075E8D6 /* ProfileManager.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		8D9092342A6AF55E0017B5F1 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		8D9092352A6AF5720017B5F1 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		8D9092362A6AF5800017B5F1 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8D9D16492A6B91E10075E8D6 /* SubscriptionManager.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		8D9092372A6AF59A0017B5F1 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		8D9092382A6AF5A80017B5F1 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		8D9092392A6AF5BB0017B5F1 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		8D9D16332A6B01FA0075E8D6 /* Preview Content1 */ = {
+			isa = PBXGroup;
+			children = (
+				8D9D16342A6B02300075E8D6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content1";
+			sourceTree = "<group>";
+		};
+		8D9D163C2A6B85BC0075E8D6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8D9D163D2A6B85D70075E8D6 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8D9D163F2A6B883A0075E8D6 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				8D9D164B2A6B99EA0075E8D6 /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		8D9D164D2A6C7E550075E8D6 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				8D9D16432A6B8A120075E8D6 /* CoordinatorFactory.swift */,
+				8D9D164E2A6C7E680075E8D6 /* ManagerFactory.swift */,
+				8D9D16502A6D55C90075E8D6 /* SceneFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +429,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D9092102A6ADBB40017B5F1 /* Preview Assets.xcassets in Resources */,
+				8D9D16352A6B02300075E8D6 /* Preview Assets.xcassets in Resources */,
 				8D90920D2A6ADBB40017B5F1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +441,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D90920B2A6ADBB30017B5F1 /* ContentView.swift in Sources */,
+				8D9D16392A6B83090075E8D6 /* AppDIContainer.swift in Sources */,
+				8D9D16412A6B89160075E8D6 /* OnboardingManager.swift in Sources */,
+				8D9D163E2A6B85D70075E8D6 /* Coordinator.swift in Sources */,
+				8D90921A2A6AEC080017B5F1 /* AppCoordinator.swift in Sources */,
 				8D9092092A6ADBB30017B5F1 /* LionVPNApp.swift in Sources */,
+				8D90923B2A6AF8DC0017B5F1 /* OnboardingView.swift in Sources */,
+				8D9092432A6AFD100017B5F1 /* OnboardingCoordinator.swift in Sources */,
+				8D9D16462A6B8FFC0075E8D6 /* AuthManager.swift in Sources */,
+				8D9D16442A6B8A120075E8D6 /* CoordinatorFactory.swift in Sources */,
+				8D9D164C2A6B99EA0075E8D6 /* Repository.swift in Sources */,
+				8D9092412A6AF9700017B5F1 /* OnboardingViewModel.swift in Sources */,
+				8D9D16482A6B903F0075E8D6 /* ProfileManager.swift in Sources */,
+				8D9092452A6AFD3A0017B5F1 /* OnboardingCoordinatorView.swift in Sources */,
+				8D9D16512A6D55C90075E8D6 /* SceneFactory.swift in Sources */,
+				8D9D164A2A6B91E10075E8D6 /* SubscriptionManager.swift in Sources */,
+				8D9D163B2A6B83580075E8D6 /* OnboardingDIContainer.swift in Sources */,
+				8D90921C2A6AEC280017B5F1 /* AppCoordinatorView.swift in Sources */,
+				8D9D164F2A6C7E680075E8D6 /* ManagerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +586,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LionVPN/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LionVPN/Application/Preview Content1\"";
 				DEVELOPMENT_TEAM = B22MD3V3UZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +615,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LionVPN/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LionVPN/Application/Preview Content1\"";
 				DEVELOPMENT_TEAM = B22MD3V3UZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
