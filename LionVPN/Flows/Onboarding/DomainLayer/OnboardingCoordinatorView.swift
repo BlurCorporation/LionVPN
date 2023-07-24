@@ -21,5 +21,3 @@ struct OnboardingCoordinatorView: View {
         Text("Onboarding")
     }
 }
-
-

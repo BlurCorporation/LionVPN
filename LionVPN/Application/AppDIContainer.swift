@@ -21,6 +21,3 @@ final class AppDIContainer {
         self.repository = Repository(managerFactory: ManagerFactory())
     }
 }
-
-
-
