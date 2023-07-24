@@ -10,7 +10,6 @@ import SwiftUI
 @main
 struct LionVPNApp: App {
     
-    
     let diContainer = AppDIContainer()
     
     var body: some Scene {

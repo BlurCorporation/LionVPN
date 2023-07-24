@@ -7,26 +7,22 @@
 
 import Foundation
 
-protocol ManagerProtocol {}
-
-enum Manager {
-    case onboardingManager
-    case authManager
-    case profileManager
-    case subscriptionManager
-}
-
-enum ManagerFactory {
-    static func makeManager(manager: Manager) -> ManagerProtocol {
-        switch manager {
-        case .onboardingManager:
-            return OnboardingManager()
-        case .authManager:
-            return AuthManager()
-        case .profileManager:
-            return ProfileManager()
-        case .subscriptionManager:
-            return SubscriptionManager()
-        }
+final class ManagerFactory {
+    
+    func makeOnboardingManager() -> OnboardingManager {
+        return OnboardingManager()
     }
+    
+    func makeAuthManager() -> AuthManager {
+        return AuthManager()
+    }
+    
+    func makeProfileManager() -> ProfileManager {
+        return ProfileManager()
+    }
+    
+    func makeSubscriptionManager() -> SubscriptionManager {
+        return SubscriptionManager()
+    }
+    
 }

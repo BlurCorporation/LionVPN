@@ -7,4 +7,4 @@
 
 import Foundation
 
-final class AuthManager: ManagerProtocol {}
+final class AuthManager {}

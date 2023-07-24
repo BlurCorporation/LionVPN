@@ -7,4 +7,4 @@
 
 import Foundation
 
-final class SubscriptionManager: ManagerProtocol {}
+final class SubscriptionManager {}

@@ -7,4 +7,4 @@
 
 import Foundation
 
-final class ProfileManager: ManagerProtocol {}
+final class ProfileManager {}

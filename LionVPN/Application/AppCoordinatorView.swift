@@ -16,8 +16,18 @@ struct AppCoordinatorView: View {
         self.dependencies = dependencies
         self.coordinator = AppCoordinator(diContainer: dependencies)
     }
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+    
+    func start() -> some View {
+        NavigationStack(path: $coordinator.path) {
+            coordinator.performFlow(flow: coordinator.start())
+                .navigationDestination(for: Flow.self) { page in
+                    coordinator.performFlow(flow: coordinator.start())
+                }
+        }
     }
 }
 

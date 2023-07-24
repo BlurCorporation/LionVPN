@@ -9,12 +9,12 @@ import SwiftUI
 
 struct OnboardingCoordinatorView: View {
     
-    let diContainer: AppDIContainer
+    let diContainer: OnboardingDIContainer
     @ObservedObject var coordinator: OnboardingCoordinator
     
-    init(diContainer: AppDIContainer) {
+    init(diContainer: OnboardingDIContainer) {
         self.diContainer = diContainer
-        self.coordinator = OnboardingCoordinator(onboardingDIContaner: diContainer)
+        self.coordinator = OnboardingCoordinator(diContaner: diContainer)
     }
 
     var body: some View {

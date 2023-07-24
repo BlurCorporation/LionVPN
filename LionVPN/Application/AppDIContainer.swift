@@ -11,10 +11,15 @@ import Foundation
 
 final class AppDIContainer {
     
-    let repository = Repository()
+    let repository: Repository
     let coordinatorFactory = CoordinatorFactory()
     let sceneFactory = SceneFactory()
+    let diContainerFactory = DIContainerFactory()
     
+    init() {
+        let managerFactory = ManagerFactory()
+        self.repository = Repository(managerFactory: ManagerFactory())
+    }
 }
 
 

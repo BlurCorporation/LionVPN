@@ -17,9 +17,6 @@ enum Flow {
     case onboarding
     case auth
     case main
-    case profile
-    case subscription
-    case password
 }
 
 protocol Destination: Hashable {}

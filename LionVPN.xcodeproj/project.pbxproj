@@ -18,7 +18,6 @@
 		8D9D16352A6B02300075E8D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D9D16342A6B02300075E8D6 /* Preview Assets.xcassets */; };
 		8D9D16392A6B83090075E8D6 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16382A6B83090075E8D6 /* AppDIContainer.swift */; };
 		8D9D163B2A6B83580075E8D6 /* OnboardingDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D163A2A6B83580075E8D6 /* OnboardingDIContainer.swift */; };
-		8D9D163E2A6B85D70075E8D6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D163D2A6B85D70075E8D6 /* Coordinator.swift */; };
 		8D9D16412A6B89160075E8D6 /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16402A6B89160075E8D6 /* OnboardingManager.swift */; };
 		8D9D16442A6B8A120075E8D6 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16432A6B8A120075E8D6 /* CoordinatorFactory.swift */; };
 		8D9D16462A6B8FFC0075E8D6 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16452A6B8FFC0075E8D6 /* AuthManager.swift */; };
@@ -27,6 +26,12 @@
 		8D9D164C2A6B99EA0075E8D6 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D164B2A6B99EA0075E8D6 /* Repository.swift */; };
 		8D9D164F2A6C7E680075E8D6 /* ManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D164E2A6C7E680075E8D6 /* ManagerFactory.swift */; };
 		8D9D16512A6D55C90075E8D6 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16502A6D55C90075E8D6 /* SceneFactory.swift */; };
+		8D9D16532A6DF0340075E8D6 /* DIContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16522A6DF0340075E8D6 /* DIContainerFactory.swift */; };
+		8D9D16552A6DFC910075E8D6 /* AuthDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16542A6DFC910075E8D6 /* AuthDIContainer.swift */; };
+		8D9D16572A6DFD3D0075E8D6 /* MainDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16562A6DFD3D0075E8D6 /* MainDIContainer.swift */; };
+		8D9D16592A6DFE680075E8D6 /* ProfileDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16582A6DFE680075E8D6 /* ProfileDIContainer.swift */; };
+		8D9D165B2A6DFED90075E8D6 /* SubscriptionDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D165A2A6DFED90075E8D6 /* SubscriptionDIContainer.swift */; };
+		8D9D165D2A6DFF5A0075E8D6 /* PasswordDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D165C2A6DFF5A0075E8D6 /* PasswordDIContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +47,6 @@
 		8D9D16342A6B02300075E8D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D9D16382A6B83090075E8D6 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		8D9D163A2A6B83580075E8D6 /* OnboardingDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDIContainer.swift; sourceTree = "<group>"; };
-		8D9D163D2A6B85D70075E8D6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		8D9D16402A6B89160075E8D6 /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
 		8D9D16432A6B8A120075E8D6 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		8D9D16452A6B8FFC0075E8D6 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -51,6 +55,12 @@
 		8D9D164B2A6B99EA0075E8D6 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		8D9D164E2A6C7E680075E8D6 /* ManagerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerFactory.swift; sourceTree = "<group>"; };
 		8D9D16502A6D55C90075E8D6 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
+		8D9D16522A6DF0340075E8D6 /* DIContainerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerFactory.swift; sourceTree = "<group>"; };
+		8D9D16542A6DFC910075E8D6 /* AuthDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDIContainer.swift; sourceTree = "<group>"; };
+		8D9D16562A6DFD3D0075E8D6 /* MainDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDIContainer.swift; sourceTree = "<group>"; };
+		8D9D16582A6DFE680075E8D6 /* ProfileDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDIContainer.swift; sourceTree = "<group>"; };
+		8D9D165A2A6DFED90075E8D6 /* SubscriptionDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDIContainer.swift; sourceTree = "<group>"; };
+		8D9D165C2A6DFF5A0075E8D6 /* PasswordDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +139,6 @@
 			children = (
 				8D9D164D2A6C7E550075E8D6 /* Factory */,
 				8D9D163F2A6B883A0075E8D6 /* Repository */,
-				8D9D163C2A6B85BC0075E8D6 /* Coordinator */,
-				8D9092262A6AF3480017B5F1 /* SubViews */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -216,7 +224,6 @@
 			children = (
 				8D9092442A6AFD3A0017B5F1 /* OnboardingCoordinatorView.swift */,
 				8D9092422A6AFD100017B5F1 /* OnboardingCoordinator.swift */,
-				8D9D163A2A6B83580075E8D6 /* OnboardingDIContainer.swift */,
 			);
 			path = DomainLayer;
 			sourceTree = "<group>";
@@ -224,6 +231,7 @@
 		8D90922A2A6AF3EC0017B5F1 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8D9D163A2A6B83580075E8D6 /* OnboardingDIContainer.swift */,
 				8D9D16402A6B89160075E8D6 /* OnboardingManager.swift */,
 			);
 			path = DataLayer;
@@ -247,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				8D9D16452A6B8FFC0075E8D6 /* AuthManager.swift */,
+				8D9D16542A6DFC910075E8D6 /* AuthDIContainer.swift */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -268,6 +277,7 @@
 		8D9092302A6AF4F00017B5F1 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8D9D16562A6DFD3D0075E8D6 /* MainDIContainer.swift */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -290,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				8D9D16472A6B903F0075E8D6 /* ProfileManager.swift */,
+				8D9D16582A6DFE680075E8D6 /* ProfileDIContainer.swift */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -312,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				8D9D16492A6B91E10075E8D6 /* SubscriptionManager.swift */,
+				8D9D165A2A6DFED90075E8D6 /* SubscriptionDIContainer.swift */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -333,6 +345,7 @@
 		8D9092392A6AF5BB0017B5F1 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8D9D165C2A6DFF5A0075E8D6 /* PasswordDIContainer.swift */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -345,18 +358,11 @@
 			path = "Preview Content1";
 			sourceTree = "<group>";
 		};
-		8D9D163C2A6B85BC0075E8D6 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				8D9D163D2A6B85D70075E8D6 /* Coordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
 		8D9D163F2A6B883A0075E8D6 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
 				8D9D164B2A6B99EA0075E8D6 /* Repository.swift */,
+				8D9092262A6AF3480017B5F1 /* SubViews */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 				8D9D16432A6B8A120075E8D6 /* CoordinatorFactory.swift */,
 				8D9D164E2A6C7E680075E8D6 /* ManagerFactory.swift */,
 				8D9D16502A6D55C90075E8D6 /* SceneFactory.swift */,
+				8D9D16522A6DF0340075E8D6 /* DIContainerFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -442,18 +449,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D9D16392A6B83090075E8D6 /* AppDIContainer.swift in Sources */,
+				8D9D16572A6DFD3D0075E8D6 /* MainDIContainer.swift in Sources */,
 				8D9D16412A6B89160075E8D6 /* OnboardingManager.swift in Sources */,
-				8D9D163E2A6B85D70075E8D6 /* Coordinator.swift in Sources */,
+				8D9D165B2A6DFED90075E8D6 /* SubscriptionDIContainer.swift in Sources */,
 				8D90921A2A6AEC080017B5F1 /* AppCoordinator.swift in Sources */,
+				8D9D16532A6DF0340075E8D6 /* DIContainerFactory.swift in Sources */,
 				8D9092092A6ADBB30017B5F1 /* LionVPNApp.swift in Sources */,
 				8D90923B2A6AF8DC0017B5F1 /* OnboardingView.swift in Sources */,
 				8D9092432A6AFD100017B5F1 /* OnboardingCoordinator.swift in Sources */,
 				8D9D16462A6B8FFC0075E8D6 /* AuthManager.swift in Sources */,
 				8D9D16442A6B8A120075E8D6 /* CoordinatorFactory.swift in Sources */,
+				8D9D16592A6DFE680075E8D6 /* ProfileDIContainer.swift in Sources */,
 				8D9D164C2A6B99EA0075E8D6 /* Repository.swift in Sources */,
 				8D9092412A6AF9700017B5F1 /* OnboardingViewModel.swift in Sources */,
+				8D9D165D2A6DFF5A0075E8D6 /* PasswordDIContainer.swift in Sources */,
 				8D9D16482A6B903F0075E8D6 /* ProfileManager.swift in Sources */,
 				8D9092452A6AFD3A0017B5F1 /* OnboardingCoordinatorView.swift in Sources */,
+				8D9D16552A6DFC910075E8D6 /* AuthDIContainer.swift in Sources */,
 				8D9D16512A6D55C90075E8D6 /* SceneFactory.swift in Sources */,
 				8D9D164A2A6B91E10075E8D6 /* SubscriptionManager.swift in Sources */,
 				8D9D163B2A6B83580075E8D6 /* OnboardingDIContainer.swift in Sources */,

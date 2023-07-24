@@ -10,7 +10,7 @@ import SwiftUI
 final class CoordinatorFactory {
     
     @ViewBuilder
-    func makeOnboarding(dependencies: AppDIContainer) -> some View {
+    func makeOnboarding(dependencies: OnboardingDIContainer) -> some View {
         OnboardingCoordinatorView(diContainer: dependencies)
     }
 }
