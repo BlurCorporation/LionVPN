@@ -18,6 +18,7 @@ final class AppCoordinator: ObservableObject {
     private let diContainer: AppDIContainer
     
     private let coordinatorFactory: CoordinatorFactory
+    private let diContainerFactory: DIContainerFactory
     private let repository: Repository
     
     @Published var path = NavigationPath()
@@ -27,6 +28,7 @@ final class AppCoordinator: ObservableObject {
         self.diContainer = diContainer
         self.coordinatorFactory = diContainer.coordinatorFactory
         self.repository = diContainer.repository
+        self.diContainerFactory = diContainer.diContainerFactory
     }
     
     func start() -> Flow {
@@ -55,7 +57,7 @@ final class AppCoordinator: ObservableObject {
     func performFlow(flow: Flow) -> some View {
         switch flow {
         case .onboarding:
-            let dependencies = OnboardingDIContainer(diContaner: self.diContainer)
+            let dependencies = diContainerFactory.makeOnboardingDIContainer(diContainer: self.diContainer)
             self.coordinatorFactory.makeOnboarding(dependencies: dependencies)
         case .auth:
             Text("auth")

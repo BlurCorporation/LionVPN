@@ -32,6 +32,12 @@
 		8D9D16592A6DFE680075E8D6 /* ProfileDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16582A6DFE680075E8D6 /* ProfileDIContainer.swift */; };
 		8D9D165B2A6DFED90075E8D6 /* SubscriptionDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D165A2A6DFED90075E8D6 /* SubscriptionDIContainer.swift */; };
 		8D9D165D2A6DFF5A0075E8D6 /* PasswordDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D165C2A6DFF5A0075E8D6 /* PasswordDIContainer.swift */; };
+		8D9D165F2A6E04AF0075E8D6 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D165E2A6E04AF0075E8D6 /* ProfileViewModel.swift */; };
+		8D9D16612A6E05080075E8D6 /* SubscriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16602A6E05080075E8D6 /* SubscriptionViewModel.swift */; };
+		8D9D16632A6E056E0075E8D6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16622A6E056E0075E8D6 /* MainViewModel.swift */; };
+		8D9D16672A6E060B0075E8D6 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16662A6E060B0075E8D6 /* AuthViewModel.swift */; };
+		8D9D16692A6E06480075E8D6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D16682A6E06480075E8D6 /* LoginViewModel.swift */; };
+		8D9D166B2A6E07220075E8D6 /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D166A2A6E07220075E8D6 /* PasswordViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +67,12 @@
 		8D9D16582A6DFE680075E8D6 /* ProfileDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDIContainer.swift; sourceTree = "<group>"; };
 		8D9D165A2A6DFED90075E8D6 /* SubscriptionDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDIContainer.swift; sourceTree = "<group>"; };
 		8D9D165C2A6DFF5A0075E8D6 /* PasswordDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDIContainer.swift; sourceTree = "<group>"; };
+		8D9D165E2A6E04AF0075E8D6 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		8D9D16602A6E05080075E8D6 /* SubscriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewModel.swift; sourceTree = "<group>"; };
+		8D9D16622A6E056E0075E8D6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		8D9D16662A6E060B0075E8D6 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		8D9D16682A6E06480075E8D6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8D9D166A2A6E07220075E8D6 /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +252,8 @@
 		8D90922B2A6AF4140017B5F1 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8D9D16642A6E05970075E8D6 /* Auth */,
+				8D9D16652A6E05AE0075E8D6 /* Login */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -263,6 +277,7 @@
 		8D90922E2A6AF4BB0017B5F1 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8D9D16622A6E056E0075E8D6 /* MainViewModel.swift */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -285,6 +300,7 @@
 		8D9092312A6AF5100017B5F1 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8D9D165E2A6E04AF0075E8D6 /* ProfileViewModel.swift */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -308,6 +324,7 @@
 		8D9092342A6AF55E0017B5F1 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8D9D16602A6E05080075E8D6 /* SubscriptionViewModel.swift */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -331,6 +348,7 @@
 		8D9092372A6AF59A0017B5F1 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8D9D166A2A6E07220075E8D6 /* PasswordViewModel.swift */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -376,6 +394,22 @@
 				8D9D16522A6DF0340075E8D6 /* DIContainerFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		8D9D16642A6E05970075E8D6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8D9D16662A6E060B0075E8D6 /* AuthViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		8D9D16652A6E05AE0075E8D6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8D9D16682A6E06480075E8D6 /* LoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,8 +487,11 @@
 				8D9D16412A6B89160075E8D6 /* OnboardingManager.swift in Sources */,
 				8D9D165B2A6DFED90075E8D6 /* SubscriptionDIContainer.swift in Sources */,
 				8D90921A2A6AEC080017B5F1 /* AppCoordinator.swift in Sources */,
+				8D9D16632A6E056E0075E8D6 /* MainViewModel.swift in Sources */,
 				8D9D16532A6DF0340075E8D6 /* DIContainerFactory.swift in Sources */,
+				8D9D165F2A6E04AF0075E8D6 /* ProfileViewModel.swift in Sources */,
 				8D9092092A6ADBB30017B5F1 /* LionVPNApp.swift in Sources */,
+				8D9D166B2A6E07220075E8D6 /* PasswordViewModel.swift in Sources */,
 				8D90923B2A6AF8DC0017B5F1 /* OnboardingView.swift in Sources */,
 				8D9092432A6AFD100017B5F1 /* OnboardingCoordinator.swift in Sources */,
 				8D9D16462A6B8FFC0075E8D6 /* AuthManager.swift in Sources */,
@@ -463,7 +500,10 @@
 				8D9D164C2A6B99EA0075E8D6 /* Repository.swift in Sources */,
 				8D9092412A6AF9700017B5F1 /* OnboardingViewModel.swift in Sources */,
 				8D9D165D2A6DFF5A0075E8D6 /* PasswordDIContainer.swift in Sources */,
+				8D9D16672A6E060B0075E8D6 /* AuthViewModel.swift in Sources */,
 				8D9D16482A6B903F0075E8D6 /* ProfileManager.swift in Sources */,
+				8D9D16612A6E05080075E8D6 /* SubscriptionViewModel.swift in Sources */,
+				8D9D16692A6E06480075E8D6 /* LoginViewModel.swift in Sources */,
 				8D9092452A6AFD3A0017B5F1 /* OnboardingCoordinatorView.swift in Sources */,
 				8D9D16552A6DFC910075E8D6 /* AuthDIContainer.swift in Sources */,
 				8D9D16512A6D55C90075E8D6 /* SceneFactory.swift in Sources */,
