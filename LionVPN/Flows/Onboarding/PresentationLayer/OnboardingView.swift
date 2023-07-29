@@ -15,9 +15,7 @@ struct OnboardingView: View {
     
     var body: some View {
         VStack {
-            Spacer()
             setImage()
-            Spacer()
             setMainText()
             setAdditionaText()
             nextButton()
@@ -27,9 +25,13 @@ struct OnboardingView: View {
     
     @ViewBuilder
     func setImage() -> some View {
-        Image(systemName: viewModel.setImage())
-            .resizable()
+        VStack {
+            Spacer()
+            Image(systemName: viewModel.setImage())
+                .resizable()
             .frame(width: 200, height: 200)
+            Spacer()
+        }
     }
     
     @ViewBuilder
@@ -56,7 +58,7 @@ struct OnboardingView: View {
     @ViewBuilder
     func nextButton() -> some View {
         Button(
-            action: {print("Next")},
+            action: { viewModel.ButtonHandler() },
             label: {Text("Далее").fontDesign(.rounded).fontWeight(.bold)}
         )
         .frame(height: 48)

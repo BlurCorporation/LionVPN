@@ -9,7 +9,7 @@ import Foundation
 
 final class PasswordCoordinator: ObservableObject {
     
-    let repository: Repository
+    let repository: RepositoryProtocol
     let sceneFactory: SceneFactory
     
     init(diContainer: PasswordDIContainer) {

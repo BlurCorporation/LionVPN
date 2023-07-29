@@ -434,9 +434,9 @@
 		8D9D164D2A6C7E550075E8D6 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
+				8D9D16502A6D55C90075E8D6 /* SceneFactory.swift */,
 				8D9D16432A6B8A120075E8D6 /* CoordinatorFactory.swift */,
 				8D9D164E2A6C7E680075E8D6 /* ManagerFactory.swift */,
-				8D9D16502A6D55C90075E8D6 /* SceneFactory.swift */,
 				8D9D16522A6DF0340075E8D6 /* DIContainerFactory.swift */,
 			);
 			path = Factory;

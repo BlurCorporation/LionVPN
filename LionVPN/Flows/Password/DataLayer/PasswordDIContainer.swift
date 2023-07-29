@@ -10,7 +10,7 @@ import Foundation
 
 struct PasswordDIContainer {
     
-    let repository: Repository
+    let repository: RepositoryProtocol
     let sceneFactory: SceneFactory
     
     init(diContaner: AppDIContainer) {

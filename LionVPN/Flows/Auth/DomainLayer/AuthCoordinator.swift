@@ -7,9 +7,14 @@
 
 import Foundation
 
-final class AuthCoordinator {
+enum loginFlow {
+    case login
+    case register
+}
+
+final class AuthCoordinator: ObservableObject {
     
-    let repository: Repository
+    let repository: RepositoryProtocol
     let sceneFactoory: SceneFactory
     let coordinatorFactory: CoordinatorFactory
     let diContainerFactory: DIContainerFactory

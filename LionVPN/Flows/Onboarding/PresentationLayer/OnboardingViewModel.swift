@@ -18,6 +18,10 @@ final class OnboardingViewModel: ObservableObject {
     
     let viewType: OnboardingViewType
     
+    var firstSceneOnFinish: () -> Void = {}
+    var secondSceneOnFinish: () -> Void = {}
+    var thirdSceneOnFinish: () -> Void = {}
+    
     init(viewType: OnboardingViewType) {
         self.viewType = viewType
     }
@@ -54,6 +58,19 @@ final class OnboardingViewModel: ObservableObject {
             
         case .thirdView:
             return ("Использование VPN практически никак не", "повлияет на скорость вашей сети")
+        }
+    }
+    
+    func ButtonHandler() {
+        switch viewType {
+        case .firstView:
+            self.firstSceneOnFinish()
+            
+        case .secondView:
+            self.secondSceneOnFinish()
+            
+        case .thirdView:
+            self.thirdSceneOnFinish()
         }
     }
 }

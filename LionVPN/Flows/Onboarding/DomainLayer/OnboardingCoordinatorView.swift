@@ -12,12 +12,26 @@ struct OnboardingCoordinatorView: View {
     let diContainer: OnboardingDIContainer
     @ObservedObject var coordinator: OnboardingCoordinator
     
+    var body: some View {
+        start()
+    }
+    
     init(diContainer: OnboardingDIContainer) {
         self.diContainer = diContainer
         self.coordinator = OnboardingCoordinator(diContaner: diContainer)
     }
 
-    var body: some View {
-        Text("Onboarding")
+    @ViewBuilder
+    func start() -> some View {
+        NavigationStack(path: $coordinator.path) {
+            coordinator.performOnboardingScene(viewType: .firstOnboarding)
+                .navigationDestination(for: OnboardingFlow.self, destination: { page in
+                    coordinator.performOnboardingScene(viewType: page)
+                })
+                .animation(.none, value: 0)
+                
+        }
+        
+        
     }
 }

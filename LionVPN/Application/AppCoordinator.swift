@@ -7,10 +7,14 @@
 
 import SwiftUI
 
-enum Flow {
+enum Flow: String, Identifiable {
     case onboarding
     case auth
     case main
+    
+    var id: String {
+        self.rawValue
+    }
 }
 
 final class AppCoordinator: ObservableObject {
@@ -19,7 +23,7 @@ final class AppCoordinator: ObservableObject {
     
     private let coordinatorFactory: CoordinatorFactory
     private let diContainerFactory: DIContainerFactory
-    private let repository: Repository
+    private var repository: RepositoryProtocol
     
     @Published var path = NavigationPath()
     @Published var flow: Flow?
@@ -32,7 +36,7 @@ final class AppCoordinator: ObservableObject {
     }
     
     func start() -> Flow {
-        if repository.checkOnboarding() && repository.checkOnboarding() {
+        if repository.checkOnboarding() && repository.checkAuth() {
             return performMain()
         } else if repository.checkOnboarding() {
             return performAuth()
@@ -42,6 +46,7 @@ final class AppCoordinator: ObservableObject {
     }
     
     func performOnboardin() -> Flow {
+        repository.onboardingComplete = { [weak self] in self?.push(.auth)}
         return .onboarding
     }
     
@@ -53,12 +58,25 @@ final class AppCoordinator: ObservableObject {
         return .main
     }
     
+    ///Методы навигации
+    func push(_ page: Flow) {
+        path.append(page)
+    }
+    
+    func pop() {
+        path.removeLast()
+    }
+    
+    func popToRoot() {
+        path.removeLast(path.count)
+    }
+    
     @ViewBuilder
     func performFlow(flow: Flow) -> some View {
         switch flow {
         case .onboarding:
-            let dependencies = diContainerFactory.makeOnboardingDIContainer(diContainer: self.diContainer)
-            self.coordinatorFactory.makeOnboarding(dependencies: dependencies)
+            let diContainer = diContainerFactory.makeOnboardingDIContainer(diContainer: self.diContainer)
+            self.coordinatorFactory.makeOnboarding(diContainer: diContainer)
         case .auth:
             Text("auth")
         case .main:

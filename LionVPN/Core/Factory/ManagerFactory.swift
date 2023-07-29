@@ -7,7 +7,19 @@
 
 import Foundation
 
-final class ManagerFactory {
+protocol ManagerFactoryProtocol {
+    func makeOnboardingManager() -> OnboardingManager
+    
+    func makeAuthManager() -> AuthManager
+    
+    func makeProfileManager() -> ProfileManager
+    
+    func makeSubscriptionManager() -> SubscriptionManager
+}
+
+final class ManagerFactory {}
+
+extension ManagerFactory: ManagerFactoryProtocol {
     
     func makeOnboardingManager() -> OnboardingManager {
         return OnboardingManager()

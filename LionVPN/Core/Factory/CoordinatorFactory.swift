@@ -10,7 +10,32 @@ import SwiftUI
 final class CoordinatorFactory {
     
     @ViewBuilder
-    func makeOnboarding(dependencies: OnboardingDIContainer) -> some View {
-        OnboardingCoordinatorView(diContainer: dependencies)
+    func makeOnboarding(diContainer: OnboardingDIContainer) -> some View {
+        OnboardingCoordinatorView(diContainer: diContainer)
+    }
+    
+    @ViewBuilder
+    func makeAuthCoordinator(diContainer: AuthDIContainer) -> some View {
+        AuthCoordinatorView(diContainer: diContainer)
+    }
+    
+    @ViewBuilder
+    func makeMainCoordinator(diContainer: MainDIContainer) -> some View {
+        MainCoordinatorView(diContainer: diContainer)
+    }
+    
+    @ViewBuilder
+    func makeProfileCoordinator(diContainer: ProfileDIContainer) -> some View {
+        ProfileCoordinatorView(diContainer: diContainer)
+    }
+    
+    @ViewBuilder
+    func makeSubscriptionAuthCoordinator(diContainer: SubscriptionDIContainer) -> some View {
+        SubscriptionCoordinatorView(diContainer: diContainer)
+    }
+    
+    @ViewBuilder
+    func makePasswordAuthCoordinator(diContainer: PasswordDIContainer) -> some View {
+        PasswordCoordinatorView(diContainer: diContainer)
     }
 }

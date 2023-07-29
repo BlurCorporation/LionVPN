@@ -7,4 +7,8 @@
 
 import Foundation
 
+protocol ProfileManagerProtocol {}
+
 final class ProfileManager {}
+
+extension ProfileManager: ProfileManagerProtocol {}

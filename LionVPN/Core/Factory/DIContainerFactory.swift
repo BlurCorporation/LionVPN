@@ -7,7 +7,24 @@
 
 import Foundation
 
-final class DIContainerFactory {
+protocol DIContainerFactoryProtocol {
+    
+    func makeOnboardingDIContainer(diContainer: AppDIContainer) -> OnboardingDIContainer
+    
+    func makeAuthDIContainer(diContainer: AppDIContainer) -> AuthDIContainer
+    
+    func makeMainDIContainer(diContainer: AppDIContainer) -> MainDIContainer
+    
+    func makeProfileDIContainer(diContainer: AppDIContainer) -> ProfileDIContainer
+    
+    func makeSubscriptionDIContainer(diContainer: AppDIContainer) -> SubscriptionDIContainer
+    
+    func makePasswordDIContainer(diContainer: AppDIContainer) -> PasswordDIContainer
+}
+
+final class DIContainerFactory {}
+
+extension DIContainerFactory: DIContainerFactoryProtocol {
     
     func makeOnboardingDIContainer(diContainer: AppDIContainer) -> OnboardingDIContainer {
         return OnboardingDIContainer(diContaner: diContainer)

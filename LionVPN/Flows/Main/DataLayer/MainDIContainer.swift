@@ -9,11 +9,13 @@ import Foundation
 
 struct MainDIContainer {
     
+    let repository: RepositoryProtocol
     let sceneFactory: SceneFactory
     let coordinatorFactory: CoordinatorFactory
     let diContainerFactory: DIContainerFactory
     
     init(diContaner: AppDIContainer) {
+        self.repository = diContaner.repository
         self.sceneFactory = diContaner.sceneFactory
         self.coordinatorFactory = diContaner.coordinatorFactory
         self.diContainerFactory = diContaner.diContainerFactory

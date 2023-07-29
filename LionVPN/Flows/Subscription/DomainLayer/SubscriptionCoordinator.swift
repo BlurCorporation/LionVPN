@@ -8,7 +8,7 @@
 import Foundation
 
 final class SubscriptionCoordinator: ObservableObject {
-    let repository: Repository
+    let repository: RepositoryProtocol
     let sceneFactory: SceneFactory
     
     init(diContaner: SubscriptionDIContainer) {

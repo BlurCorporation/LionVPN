@@ -7,4 +7,8 @@
 
 import Foundation
 
+protocol SubscriptionManagerProtocol {}
+
 final class SubscriptionManager {}
+
+extension SubscriptionManager: SubscriptionManagerProtocol {}

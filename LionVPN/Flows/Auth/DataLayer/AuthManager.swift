@@ -7,4 +7,8 @@
 
 import Foundation
 
+protocol AuthManagerPrototcol {}
+
 final class AuthManager {}
+
+extension AuthManager: AuthManagerPrototcol {}

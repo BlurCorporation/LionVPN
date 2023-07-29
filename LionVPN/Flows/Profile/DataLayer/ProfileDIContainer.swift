@@ -9,7 +9,7 @@ import Foundation
 
 struct ProfileDIContainer {
     
-    let repository: Repository
+    let repository: RepositoryProtocol
     let sceneFactory: SceneFactory
     let coordinatorFactory: CoordinatorFactory
     let diContainerFactory: DIContainerFactory
