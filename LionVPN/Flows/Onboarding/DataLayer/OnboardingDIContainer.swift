@@ -9,7 +9,7 @@ import Foundation
 
 struct OnboardingDIContainer {
     
-    let repository: RepositoryProtocol
+    let repository: RepositoryOnboarding
     let sceneFactory: SceneFactory
     
     init(diContaner: AppDIContainer) {

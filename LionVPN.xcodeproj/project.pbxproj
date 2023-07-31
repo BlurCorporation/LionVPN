@@ -181,6 +181,7 @@
 		8D90921F2A6AF03C0017B5F1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				8D9092262A6AF3480017B5F1 /* SubViews */,
 				8D9D164D2A6C7E550075E8D6 /* Factory */,
 				8D9D163F2A6B883A0075E8D6 /* Repository */,
 			);
@@ -426,7 +427,6 @@
 			isa = PBXGroup;
 			children = (
 				8D9D164B2A6B99EA0075E8D6 /* Repository.swift */,
-				8D9092262A6AF3480017B5F1 /* SubViews */,
 			);
 			path = Repository;
 			sourceTree = "<group>";

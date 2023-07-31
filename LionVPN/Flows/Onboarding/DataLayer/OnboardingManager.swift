@@ -13,7 +13,7 @@ protocol OnboardingManagerProtocol {
 }
 
 final class OnboardingManager {
-    @AppStorage("onboarding") var isCompleted = false
+    @AppStorage("onboarding") private var isCompleted = false
 }
 
 extension OnboardingManager: OnboardingManagerProtocol {

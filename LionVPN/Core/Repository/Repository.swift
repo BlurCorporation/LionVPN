@@ -7,7 +7,10 @@
 
 import SwiftUI
 
-typealias RepositoryProtocol = RepositoryOnboardingProtocol & RepositoryAuthProtocol & OnboardingCompletedProtocol
+typealias RepositoryProtocol = RepositoryOnboarding & RepositoryAuthProtocol
+
+
+typealias RepositoryOnboarding = OnboardingCompletedProtocol & RepositoryOnboardingProtocol
 
 protocol OnboardingCompletedProtocol {
     var onboardingComplete: () -> Void { get set }
@@ -34,7 +37,7 @@ final class Repository: OnboardingCompletedProtocol {
     private let profileManager: ProfileManagerProtocol
     private let subscriptionManager: SubscriptionManagerProtocol
     
-    init(managerFactory: ManagerFactory) {
+    init(managerFactory: ManagerFactoryProtocol) {
         self.onboardingManager = managerFactory.makeOnboardingManager()
         self.authManager = managerFactory.makeAuthManager()
         self.profileManager = managerFactory.makeProfileManager()

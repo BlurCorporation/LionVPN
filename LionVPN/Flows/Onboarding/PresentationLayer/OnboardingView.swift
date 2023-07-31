@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct OnboardingView: View {
     
     @ObservedObject var viewModel: OnboardingViewModel

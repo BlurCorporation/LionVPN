@@ -22,7 +22,7 @@ final class OnboardingCoordinator: ObservableObject {
     @Published var path = NavigationPath()
     @Published var flow: OnboardingFlow?
     
-    let repository: RepositoryProtocol
+    let repository: RepositoryOnboarding
     let sceneFactory: SceneFactory
     
     init(diContaner: OnboardingDIContainer) {

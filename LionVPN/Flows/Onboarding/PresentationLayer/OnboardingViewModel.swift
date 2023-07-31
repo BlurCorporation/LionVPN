@@ -13,7 +13,6 @@ enum OnboardingViewType {
     case thirdView
 }
 
-
 final class OnboardingViewModel: ObservableObject {
     
     let viewType: OnboardingViewType

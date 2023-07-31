@@ -31,7 +31,5 @@ struct OnboardingCoordinatorView: View {
                 .animation(.none, value: 0)
                 
         }
-        
-        
     }
 }
