@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D1927902A79695A007483AF /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19278F2A79695A007483AF /* ConnectionView.swift */; };
 		8D9092092A6ADBB30017B5F1 /* LionVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9092082A6ADBB30017B5F1 /* LionVPNApp.swift */; };
 		8D90920D2A6ADBB40017B5F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D90920C2A6ADBB40017B5F1 /* Assets.xcassets */; };
 		8D90921A2A6AEC080017B5F1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9092192A6AEC080017B5F1 /* AppCoordinator.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D19278F2A79695A007483AF /* ConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
 		8D9092052A6ADBB30017B5F1 /* LionVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LionVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9092082A6ADBB30017B5F1 /* LionVPNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionVPNApp.swift; sourceTree = "<group>"; };
 		8D90920C2A6ADBB40017B5F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -181,9 +183,9 @@
 		8D90921F2A6AF03C0017B5F1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				8D9092262A6AF3480017B5F1 /* SubViews */,
-				8D9D164D2A6C7E550075E8D6 /* Factory */,
 				8D9D163F2A6B883A0075E8D6 /* Repository */,
+				8D9D164D2A6C7E550075E8D6 /* Factory */,
+				8D9092262A6AF3480017B5F1 /* SubViews */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -251,6 +253,7 @@
 		8D9092262A6AF3480017B5F1 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				8D19278F2A79695A007483AF /* ConnectionView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				8D9D16572A6DFD3D0075E8D6 /* MainDIContainer.swift in Sources */,
 				8D9D16412A6B89160075E8D6 /* OnboardingManager.swift in Sources */,
 				8D9D16752A6E8F740075E8D6 /* SubscriptionView.swift in Sources */,
+				8D1927902A79695A007483AF /* ConnectionView.swift in Sources */,
 				8D9D165B2A6DFED90075E8D6 /* SubscriptionDIContainer.swift in Sources */,
 				8D90921A2A6AEC080017B5F1 /* AppCoordinator.swift in Sources */,
 				8D9D16632A6E056E0075E8D6 /* MainViewModel.swift in Sources */,

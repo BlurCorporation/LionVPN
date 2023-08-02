@@ -7,15 +7,13 @@
 
 import Foundation
 
-
-
 final class AppDIContainer {
-    
+    //MARK: - Properties
     let repository: RepositoryProtocol
     let coordinatorFactory = CoordinatorFactory()
-    let sceneFactory = SceneFactory()
-    let diContainerFactory = DIContainerFactory()
-    
+    let sceneFactory = SceneFactory()    
+    let diContainerFactory: DIContainerFactoryProtocol = DIContainerFactory()
+    //MARK: - Init
     init() {
         let managerFactory = ManagerFactory()
         self.repository = Repository(managerFactory: managerFactory)

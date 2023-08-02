@@ -8,12 +8,13 @@ import SwiftUI
 
 @main
 struct LionVPNApp: App {
-    
+    /// менеджер зависимостей
     let diContainer = AppDIContainer()
-    
+    /// запуск сцены
     var body: some Scene {
         WindowGroup {
-            AppCoordinatorView(dependencies: diContainer)
+            AppCoordinatorView(appDIContainer: diContainer)
         }
     }
 }
+

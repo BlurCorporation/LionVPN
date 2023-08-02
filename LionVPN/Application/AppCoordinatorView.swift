@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct AppCoordinatorView: View {
-    
-    let dependencies: AppDIContainer
+    //MARK: - Properties
+    let appDIContainer: AppDIContainer
     @ObservedObject var coordinator: AppCoordinator
-    
-    init(dependencies: AppDIContainer) {
-        self.dependencies = dependencies
-        self.coordinator = AppCoordinator(diContainer: dependencies)
+    //MARK: - Init
+    init(appDIContainer: AppDIContainer) {
+        self.appDIContainer = appDIContainer
+        self.coordinator = AppCoordinator(diContainer: appDIContainer)
     }
-    
+    //MARK: - Body
     var body: some View {
         start()
     }
-    
+    /// запуск Координатора
     func start() -> some View {
         NavigationStack(path: $coordinator.path) {
             coordinator.performFlow(flow: coordinator.start())
@@ -30,9 +30,9 @@ struct AppCoordinatorView: View {
         }
     }
 }
-
+    //MARK: - Preview
 struct AppCoordinatorView_Previews: PreviewProvider {
     static var previews: some View {
-        AppCoordinatorView(dependencies: AppDIContainer())
+        AppCoordinatorView(appDIContainer: AppDIContainer())
     }
 }

@@ -12,7 +12,7 @@ struct ProfileDIContainer {
     let repository: RepositoryProtocol
     let sceneFactory: SceneFactory
     let coordinatorFactory: CoordinatorFactory
-    let diContainerFactory: DIContainerFactory
+    let diContainerFactory: DIContainerFactoryProtocol
     
     init(diContaner: AppDIContainer) {
         self.repository = diContaner.repository

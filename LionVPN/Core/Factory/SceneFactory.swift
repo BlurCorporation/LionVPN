@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+/// Фабрика слоя  представления
 
 final class SceneFactory {
     
@@ -32,6 +33,12 @@ final class SceneFactory {
         return view
     }
     
+    func makeMainScene() -> some View {
+        let viewModel = MainViewModel()
+        let view = MainView(viewModel: viewModel)
+        return view
+    }
+    
     func makeLoginScene(flow: loginFlow) -> some View {
         switch flow {
         case .login:
@@ -43,12 +50,6 @@ final class SceneFactory {
             let view = LoginView(viewModel: viewModel)
             return view
         }
-    }
-    
-    func makeMainScene() -> some View {
-        let viewModel = MainViewModel()
-        let view = MainView(viewModel: viewModel)
-        return view
     }
     
     func makeProfileScene() -> some View {
@@ -63,4 +64,16 @@ final class SceneFactory {
         return view
     }
     
+    func makePasswordScene(flow: PasswordFlow) -> some View {
+        switch flow {
+        case .email:
+            let viewModel = PasswordViewModel(viewType: .email)
+            let view = PasswordView(viewModel: viewModel)
+            return view
+        case .password:
+            let viewModel = PasswordViewModel(viewType: .password)
+            let view = PasswordView(viewModel: viewModel)
+            return view
+        }
+    }
 }

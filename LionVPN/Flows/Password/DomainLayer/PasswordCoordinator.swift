@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum PasswordFlow {
+    case email
+    case password
+}
+
 final class PasswordCoordinator: ObservableObject {
     
     let repository: RepositoryProtocol

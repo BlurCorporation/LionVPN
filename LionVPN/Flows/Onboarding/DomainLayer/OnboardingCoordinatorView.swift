@@ -28,8 +28,6 @@ struct OnboardingCoordinatorView: View {
                 .navigationDestination(for: OnboardingFlow.self, destination: { page in
                     coordinator.performOnboardingScene(viewType: page)
                 })
-                .animation(.none, value: 0)
-                
         }
     }
 }

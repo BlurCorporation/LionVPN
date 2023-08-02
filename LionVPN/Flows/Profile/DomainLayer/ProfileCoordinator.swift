@@ -12,7 +12,7 @@ final class ProfileCoordinator: ObservableObject {
     let repository: RepositoryProtocol
     let sceneFactory: SceneFactory
     let coordinatorFactory: CoordinatorFactory
-    let diContainerFactory: DIContainerFactory
+    let diContainerFactory: DIContainerFactoryProtocol
     
     init(diContainer: ProfileDIContainer) {
         self.repository = diContainer.repository

@@ -17,7 +17,7 @@ final class AuthCoordinator: ObservableObject {
     let repository: RepositoryProtocol
     let sceneFactoory: SceneFactory
     let coordinatorFactory: CoordinatorFactory
-    let diContainerFactory: DIContainerFactory
+    let diContainerFactory: DIContainerFactoryProtocol
         
     init(diContainer: AuthDIContainer) {
         self.repository = diContainer.repository

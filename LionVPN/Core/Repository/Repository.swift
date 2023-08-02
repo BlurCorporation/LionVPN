@@ -11,7 +11,9 @@ typealias RepositoryProtocol = RepositoryOnboarding & RepositoryAuthProtocol
 
 
 typealias RepositoryOnboarding = OnboardingCompletedProtocol & RepositoryOnboardingProtocol
+typealias RepositoryAuth = RepositoryAuthProtocol
 
+// MARK: - Onboarding Protocols
 protocol OnboardingCompletedProtocol {
     var onboardingComplete: () -> Void { get set }
 }
@@ -23,6 +25,7 @@ protocol RepositoryOnboardingProtocol {
     func setOnboardingCompleted()
 }
 
+// MARK: - Auth Protocols
 protocol RepositoryAuthProtocol {
     
     func checkAuth() -> Bool
@@ -45,6 +48,8 @@ final class Repository: OnboardingCompletedProtocol {
     }
 }
 
+
+// MARK: - Extensions
 extension Repository: RepositoryOnboardingProtocol {
     
     func checkOnboarding() -> Bool {

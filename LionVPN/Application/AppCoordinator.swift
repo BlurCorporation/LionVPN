@@ -18,23 +18,24 @@ enum Flow: String, Identifiable {
 }
 
 final class AppCoordinator: ObservableObject {
-    
+    //MARK: - Properties
     private let diContainer: AppDIContainer
     
     private let coordinatorFactory: CoordinatorFactory
-    private let diContainerFactory: DIContainerFactory
+    private let diContainerFactory: DIContainerFactoryProtocol
     private var repository: RepositoryProtocol
-    
+    /// Путь и флоу координатора
     @Published var path = NavigationPath()
     @Published var flow: Flow?
-    
+    //MARK: - Init
     init(diContainer: AppDIContainer){
         self.diContainer = diContainer
         self.coordinatorFactory = diContainer.coordinatorFactory
         self.repository = diContainer.repository
         self.diContainerFactory = diContainer.diContainerFactory
     }
-    
+    //MARK: - Methods
+    /// Определяет флоу
     func start() -> Flow {
         if repository.checkOnboarding() && repository.checkAuth() {
             return performMain()
@@ -43,6 +44,18 @@ final class AppCoordinator: ObservableObject {
         } else {
             return performOnboardin()
         }
+    }
+    ///Методы навигации
+    func push(_ page: Flow) {
+        path.append(page)
+    }
+    
+    func pop() {
+        path.removeLast()
+    }
+    
+    func popToRoot() {
+        path.removeLast(path.count)
     }
     
     func performOnboardin() -> Flow {
@@ -58,19 +71,7 @@ final class AppCoordinator: ObservableObject {
         return .main
     }
     
-    ///Методы навигации
-    func push(_ page: Flow) {
-        path.append(page)
-    }
-    
-    func pop() {
-        path.removeLast()
-    }
-    
-    func popToRoot() {
-        path.removeLast(path.count)
-    }
-    
+    /// Запуск флоу
     @ViewBuilder
     func performFlow(flow: Flow) -> some View {
         switch flow {
@@ -83,5 +84,4 @@ final class AppCoordinator: ObservableObject {
             Text("main")
         }
     }
-    
 }
