@@ -11,14 +11,18 @@
 		8D90920B2A6ADBB30017B5F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90920A2A6ADBB30017B5F1 /* ContentView.swift */; };
 		8D90920D2A6ADBB40017B5F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D90920C2A6ADBB40017B5F1 /* Assets.xcassets */; };
 		8D9092102A6ADBB40017B5F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D90920F2A6ADBB40017B5F1 /* Preview Assets.xcassets */; };
+		DA35B421017BD11070D59530 /* Pods_LionVPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D26CF9151EB79D06EBA5A5A /* Pods_LionVPN.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D26CF9151EB79D06EBA5A5A /* Pods_LionVPN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LionVPN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9092052A6ADBB30017B5F1 /* LionVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LionVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9092082A6ADBB30017B5F1 /* LionVPNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionVPNApp.swift; sourceTree = "<group>"; };
 		8D90920A2A6ADBB30017B5F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8D90920C2A6ADBB40017B5F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D90920F2A6ADBB40017B5F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9407A294657967DEA53B0330 /* Pods-LionVPN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LionVPN.release.xcconfig"; path = "Target Support Files/Pods-LionVPN/Pods-LionVPN.release.xcconfig"; sourceTree = "<group>"; };
+		C79BAEE083110EF141B4B36B /* Pods-LionVPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LionVPN.debug.xcconfig"; path = "Target Support Files/Pods-LionVPN/Pods-LionVPN.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA35B421017BD11070D59530 /* Pods_LionVPN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,8 @@
 			children = (
 				8D9092072A6ADBB30017B5F1 /* LionVPN */,
 				8D9092062A6ADBB30017B5F1 /* Products */,
+				CDF7B89E1157EEC61FACA27E /* Pods */,
+				CBD2EE6A08B7887CBD3D398B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CBD2EE6A08B7887CBD3D398B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D26CF9151EB79D06EBA5A5A /* Pods_LionVPN.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDF7B89E1157EEC61FACA27E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C79BAEE083110EF141B4B36B /* Pods-LionVPN.debug.xcconfig */,
+				9407A294657967DEA53B0330 /* Pods-LionVPN.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D9092132A6ADBB40017B5F1 /* Build configuration list for PBXNativeTarget "LionVPN" */;
 			buildPhases = (
+				2F0D0E3F4E33360B0B78850B /* [CP] Check Pods Manifest.lock */,
 				8D9092012A6ADBB30017B5F1 /* Sources */,
 				8D9092022A6ADBB30017B5F1 /* Frameworks */,
 				8D9092032A6ADBB30017B5F1 /* Resources */,
+				8DF8F6A02A9C850500CA138F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F0D0E3F4E33360B0B78850B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LionVPN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DF8F6A02A9C850500CA138F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D9092012A6ADBB30017B5F1 /* Sources */ = {
@@ -261,6 +329,7 @@
 		};
 		8D9092142A6ADBB40017B5F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C79BAEE083110EF141B4B36B /* Pods-LionVPN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +359,7 @@
 		};
 		8D9092152A6ADBB40017B5F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9407A294657967DEA53B0330 /* Pods-LionVPN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
