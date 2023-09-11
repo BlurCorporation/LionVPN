@@ -27,12 +27,12 @@ protocol OnboardingViewModelProtocol: ObservableObject {
 // MARK: - ViewModel
 final class OnboardingViewModel: OnboardingViewModelProtocol {
     
-    //MARK: Properties
+    // MARK: Properties
     @Published var currentIndex: Int = 0
     var contentModels: [OnboardingContent] = Constants.contentModels
     var finishOnboarding: () -> Void  = {}
     
-    //MARK: Methods
+    // MARK: Methods
     func nextButtonTapped() {
         if currentIndex < contentModels.count - 1 {
             currentIndex += 1
@@ -47,7 +47,7 @@ final class OnboardingViewModel: OnboardingViewModelProtocol {
 }
 
 // MARK: - Constants
-fileprivate enum Constants {
+private enum Constants {
     static let contentModels: [OnboardingContent] = [
         OnboardingContent(
             imageName: "xbox.logo",
