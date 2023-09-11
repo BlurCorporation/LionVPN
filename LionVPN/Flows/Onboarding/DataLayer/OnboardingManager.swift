@@ -11,6 +11,7 @@ import SwiftUI
 protocol OnboardingManagerProtocol {
     /// Используется для сохранения информации о прохождении Онбординга
     func setOnboardingCompleted()
+    
     /// Используется для получения информации о прохождении Онбординга
     /// - Returns: Пройден ли онбординг
     func isOnboardingComplete() -> Bool
