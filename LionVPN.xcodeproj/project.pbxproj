@@ -11,6 +11,8 @@
 		8D90920B2A6ADBB30017B5F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90920A2A6ADBB30017B5F1 /* ContentView.swift */; };
 		8D90920D2A6ADBB40017B5F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D90920C2A6ADBB40017B5F1 /* Assets.xcassets */; };
 		8D9092102A6ADBB40017B5F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D90920F2A6ADBB40017B5F1 /* Preview Assets.xcassets */; };
+		8DAAE8B22AAF57B100BB6F06 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAAE8B12AAF57B100BB6F06 /* OnboardingModel.swift */; };
+		8DAAE8B42AAF586300BB6F06 /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAAE8B32AAF586300BB6F06 /* OnboardingManager.swift */; };
 		DA35B421017BD11070D59530 /* Pods_LionVPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D26CF9151EB79D06EBA5A5A /* Pods_LionVPN.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +23,8 @@
 		8D90920A2A6ADBB30017B5F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8D90920C2A6ADBB40017B5F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D90920F2A6ADBB40017B5F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8DAAE8B12AAF57B100BB6F06 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		8DAAE8B32AAF586300BB6F06 /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
 		9407A294657967DEA53B0330 /* Pods-LionVPN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LionVPN.release.xcconfig"; path = "Target Support Files/Pods-LionVPN/Pods-LionVPN.release.xcconfig"; sourceTree = "<group>"; };
 		C79BAEE083110EF141B4B36B /* Pods-LionVPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LionVPN.debug.xcconfig"; path = "Target Support Files/Pods-LionVPN/Pods-LionVPN.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +131,8 @@
 		8DAAE8AF2AAF56FE00BB6F06 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8DAAE8B12AAF57B100BB6F06 /* OnboardingModel.swift */,
+				8DAAE8B32AAF586300BB6F06 /* OnboardingManager.swift */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -269,8 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DAAE8B42AAF586300BB6F06 /* OnboardingManager.swift in Sources */,
 				8D90920B2A6ADBB30017B5F1 /* ContentView.swift in Sources */,
 				8D9092092A6ADBB30017B5F1 /* LionVPNApp.swift in Sources */,
+				8DAAE8B22AAF57B100BB6F06 /* OnboardingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
