@@ -18,10 +18,13 @@ struct OnboardingView<ViewModel>: View where ViewModel: OnboardingViewModelProto
         VStack {
             imageView
             descriptionView
-            if viewModel.currentIndex < viewModel.contentModels.count - 1 {
-                skipButton
+            VStack(spacing: 0) {
+                if viewModel.currentIndex < viewModel.contentModels.count - 1 {
+                    skipButton
+                }
+                nextButton
             }
-            nextButton
+            
         }
         .padding(.horizontal, 16)
     }
@@ -85,5 +88,11 @@ private extension OnboardingView {
         .cornerRadius(10)
         .ignoresSafeArea()
         .padding(.bottom,20)
+    }
+}
+
+struct OnboardingView_Previews: PreviewProvider {
+    static var previews: some View {
+        OnboardingView(viewModel: OnboardingViewModel())
     }
 }
