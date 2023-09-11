@@ -58,10 +58,9 @@
 		8D9092072A6ADBB30017B5F1 /* LionVPN */ = {
 			isa = PBXGroup;
 			children = (
-				8D9092082A6ADBB30017B5F1 /* LionVPNApp.swift */,
-				8D90920A2A6ADBB30017B5F1 /* ContentView.swift */,
-				8D90920C2A6ADBB40017B5F1 /* Assets.xcassets */,
-				8D90920E2A6ADBB40017B5F1 /* Preview Content */,
+				8DAAE8A92AAF529300BB6F06 /* Application */,
+				8DAAE8AB2AAF54D600BB6F06 /* Core */,
+				8DAAE8AC2AAF54EE00BB6F06 /* Flows */,
 			);
 			path = LionVPN;
 			sourceTree = "<group>";
@@ -72,6 +71,71 @@
 				8D90920F2A6ADBB40017B5F1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8DAAE8A92AAF529300BB6F06 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8D9092082A6ADBB30017B5F1 /* LionVPNApp.swift */,
+				8D90920A2A6ADBB30017B5F1 /* ContentView.swift */,
+				8DAAE8AA2AAF53AF00BB6F06 /* Resources */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8DAAE8AA2AAF53AF00BB6F06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D90920C2A6ADBB40017B5F1 /* Assets.xcassets */,
+				8D90920E2A6ADBB40017B5F1 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8DAAE8AB2AAF54D600BB6F06 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8DAAE8AC2AAF54EE00BB6F06 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				8DAAE8AD2AAF569F00BB6F06 /* Onboarding */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		8DAAE8AD2AAF569F00BB6F06 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8DAAE8AE2AAF56BF00BB6F06 /* PresentationLayer */,
+				8DAAE8B02AAF570D00BB6F06 /* DomainLayer */,
+				8DAAE8AF2AAF56FE00BB6F06 /* DataLayer */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8DAAE8AE2AAF56BF00BB6F06 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		8DAAE8AF2AAF56FE00BB6F06 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		8DAAE8B02AAF570D00BB6F06 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DomainLayer;
 			sourceTree = "<group>";
 		};
 		CBD2EE6A08B7887CBD3D398B /* Frameworks */ = {
@@ -335,7 +399,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LionVPN/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LionVPN/Application/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = B22MD3V3UZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -365,7 +429,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LionVPN/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LionVPN/Application/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = B22MD3V3UZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
