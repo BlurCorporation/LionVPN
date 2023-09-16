@@ -84,6 +84,8 @@ final class OnboardingCoordinator: OnboardingCoordinatorProtocol {
     private var repository: OnboardingRepositoryProtocol
     
     // MARK: Init
+    /// Инициализатор
+    /// - Parameter repository: репозиторий
     init(
         repository: OnboardingRepositoryProtocol
     ) {
