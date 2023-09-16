@@ -138,8 +138,8 @@
 		8DAAE8AE2AAF56BF00BB6F06 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				8DAAE8B52AAF9A7700BB6F06 /* OnboardingViewModel.swift */,
 				8DAAE8B72AAF9AF700BB6F06 /* OnboardingView.swift */,
+				8DAAE8B52AAF9A7700BB6F06 /* OnboardingViewModel.swift */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";

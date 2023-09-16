@@ -9,12 +9,15 @@ import SwiftUI
 
 // MARK: - Struct app
 @main
+/// Вход в программу
 struct LionVPN: App {
+    
     // MARK: Managers and Services
     /// Репозиторий
     private let repository = Repository()
     
     // MARK: App body
+    /// Корневой слой представления
     var body: some Scene {
         WindowGroup {
             configureApp()

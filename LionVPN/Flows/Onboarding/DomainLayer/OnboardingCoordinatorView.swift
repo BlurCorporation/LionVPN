@@ -16,6 +16,7 @@ struct OnboardingCoordinatorView<Coordinator>: View where Coordinator: Onboardin
     @ObservedObject var coordinator: Coordinator
     
     // MARK: Body
+    /// Тело View с реализацией NavigationStack и привязкой к состояниям координатора
     var body: some View {
         NavigationStack(
             path: $coordinator.path

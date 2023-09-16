@@ -8,7 +8,9 @@
 import SwiftUI
 
 // MARK: - Protocol
+/// Протокол менеджера онбординга
 protocol OnboardingManagerProtocol {
+    
     /// Используется для сохранения информации о прохождении Онбординга
     func setOnboardingCompleted()
     
@@ -18,12 +20,15 @@ protocol OnboardingManagerProtocol {
 }
 
 // MARK: - Manager
+/// Менеджер онбординга
 final class OnboardingManager {
+    
     /// Переменная в UserDefault, хранящая информацию о прохождении онбординга
     @AppStorage("onboarding") private var isCompleted = false
 }
 
 // MARK: - extensions
+/// Реализация протокола менеджера онбординга
 extension OnboardingManager: OnboardingManagerProtocol {
     
     func setOnboardingCompleted() {

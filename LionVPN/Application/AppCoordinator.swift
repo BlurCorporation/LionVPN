@@ -5,19 +5,17 @@
 //  Created by Николай Чунихин on 11.09.2023.
 //
 
-import Foundation
-
-//  Created by Николай Чунихин on 01.09.2023.
-//
-
 import SwiftUI
 
 // MARK: - Flows
 /// Перечисление flows координатора
 enum AppFlow: String, Identifiable {
-    ///
+    
+    /// flow онбординга
     case onboarding
+    /// flow авторизации
     case authorization
+    /// flow главного экрана
     case main
     
     var id: String {
@@ -26,6 +24,7 @@ enum AppFlow: String, Identifiable {
 }
 
 // MARK: - Protocol
+/// Протокол координатора приложения
 protocol AppCoordinatorProtocol: ObservableObject {
     
     /// Путь хранит информацию о всех дочерних открытых слоях представления
@@ -56,7 +55,7 @@ protocol AppCoordinatorProtocol: ObservableObject {
     /// Убирает последний запущеный слой представления типа
     func pop()
     
-    /// Возвразается к корневому представлению, убирая все слои после него
+    /// Возвращается к корневому представлению, убирая все слои после него
     func popToRoot()
         
     /// Убирает запущеный слой представления типа sheet
@@ -82,6 +81,7 @@ protocol AppCoordinatorProtocol: ObservableObject {
 }
 
 // MARK: - Coordinator
+/// Координатор приложения
 final class AppCoordinator: AppCoordinatorProtocol {
     
     // MARK: Properties
@@ -93,6 +93,8 @@ final class AppCoordinator: AppCoordinatorProtocol {
     private let repository: RepositoryProtocol
     
     // MARK: Init
+    /// Инициализатор
+    /// - Parameter repository: репозиторий
     init(
         repository: RepositoryProtocol
     ) {

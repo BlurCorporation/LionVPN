@@ -8,7 +8,10 @@
 import SwiftUI
 
 // MARK: - Views
+/// Перечисление страниц, которые может открыть координатор
 enum OnboardingPage: String, Identifiable {
+    
+    /// Онбординг
     case onboarding
     
     var id: String {
@@ -17,6 +20,7 @@ enum OnboardingPage: String, Identifiable {
 }
 
 // MARK: - Protocol
+/// Протокол координатора онбординга
 protocol OnboardingCoordinatorProtocol: ObservableObject {
     /// Путь хранит информацию о всех дочерних открытых слоях представления
     var path: NavigationPath { get set }
@@ -42,7 +46,7 @@ protocol OnboardingCoordinatorProtocol: ObservableObject {
     /// Убирает последний запущеный слой представления типа
     func pop()
     
-    /// Возвразается к корневому представлению, убирая все слои после него
+    /// Возвращается к корневому представлению, убирая все слои после него
     func popToRoot()
     
     /// Убирает запущеный слой представления типа sheet
@@ -68,6 +72,7 @@ protocol OnboardingCoordinatorProtocol: ObservableObject {
 }
 
 // MARK: - Coordinator
+/// Координатор онбординга
 final class OnboardingCoordinator: OnboardingCoordinatorProtocol {
     // MARK: Properties
     @Published var path: NavigationPath = NavigationPath()

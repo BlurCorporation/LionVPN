@@ -7,7 +7,13 @@
 
 /// Структура, которая содержит данные для слоя представления онбординга
 struct OnboardingContent {
+    
+    /// Название изображения в Assets
     let imageName: String
+    
+    /// Заголовок
     let title: String
+    
+    /// Описание
     let description: (String, String)
 }

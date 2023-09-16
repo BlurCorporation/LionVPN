@@ -8,6 +8,7 @@
 import Foundation
 
 // MARK: - Protocol
+/// Протокол ViewModel онбординга
 protocol OnboardingViewModelProtocol: ObservableObject {
     
     /// Индекс массива с моделями данных слоя представления
@@ -47,6 +48,7 @@ final class OnboardingViewModel: OnboardingViewModelProtocol {
 }
 
 // MARK: - Constants
+/// Константы для заполнения онбординга контентом 
 private enum Constants {
     static let contentModels: [OnboardingContent] = [
         OnboardingContent(

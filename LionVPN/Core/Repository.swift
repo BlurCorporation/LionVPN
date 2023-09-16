@@ -8,6 +8,7 @@
 typealias RepositoryProtocol = OnboardingRepositoryProtocol
 
 // MARK: - Repository
+
 /// Репозиторий
 final class Repository {
     let onboardingManager: OnboardingManagerProtocol = OnboardingManager()
@@ -16,8 +17,11 @@ final class Repository {
 // MARK: - Onboarding
 
 // MARK: Protocol
+/// Протокол онбординга для  репозитория
 protocol OnboardingRepositoryProtocol {
+    
     /// Используется для сохранения информации в менеджер о прохождении Онбординга
+    
     func setOnboardingComleted()
     /// Используется для получения информации из менеджера о прохождении Онбординга
     /// - Returns: Пройден ли онбординг
@@ -25,6 +29,7 @@ protocol OnboardingRepositoryProtocol {
 }
 
 // MARK: Extention
+/// Реализация протокола онбординга для репозитория
 extension Repository: OnboardingRepositoryProtocol {
     
     func setOnboardingComleted() {
