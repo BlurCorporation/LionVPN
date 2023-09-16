@@ -21,8 +21,8 @@ final class Repository {
 protocol OnboardingRepositoryProtocol {
     
     /// Используется для сохранения информации в менеджер о прохождении Онбординга
-    
     func setOnboardingComleted()
+    
     /// Используется для получения информации из менеджера о прохождении Онбординга
     /// - Returns: Пройден ли онбординг
     func isOnboardingComplete() -> Bool
