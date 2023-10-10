@@ -104,7 +104,7 @@ final class AppCoordinator: AppCoordinatorProtocol {
     // MARK: Navigation methods
     func start() -> AppFlow {
         if repository.isOnboardingComplete() {
-            return .authorization
+            return .main
         } else {
             return .onboarding
         }
@@ -154,7 +154,7 @@ final class AppCoordinator: AppCoordinatorProtocol {
         case .authorization:
             return AnyView(Text("Auth"))
         case .main:
-            return AnyView(Text("Main"))
+            return AnyView(MainView(viewModel: MainViewModel()))
         }
     }
     
@@ -174,7 +174,7 @@ final class AppCoordinator: AppCoordinatorProtocol {
         case .authorization:
             return AnyView(Text("Auth"))
         case .main:
-            return AnyView(Text("Main"))
+            return AnyView(MainView(viewModel: MainViewModel()))
         }
     }
     
@@ -194,7 +194,7 @@ final class AppCoordinator: AppCoordinatorProtocol {
         case .authorization:
             return AnyView(Text("Auth"))
         case .main:
-            return AnyView(Text("Main"))
+            return AnyView(MainView(viewModel: MainViewModel()))
         }
     }
 }
